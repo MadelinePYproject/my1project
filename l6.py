@@ -23,3 +23,10 @@ def conver_seconds(seconds):
 user_input = int(input("Vvedite kl-vo secund : "))
 print(conver_seconds(user_input))
 
+user_number = int(input("Vvod: "))
+while user_number > 9:
+    chislo = 1
+    for digit in str(user_number):
+        chislo *= int(digit)
+    user_number = chislo
+print(user_number)
